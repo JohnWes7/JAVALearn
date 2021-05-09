@@ -5,7 +5,6 @@ public class TestSystemIn04 {
         Scanner scanner = new Scanner(System.in);
 
         
-
         System.out.println("请输入用户Index");
         int index = scanner.nextInt();
 
@@ -23,5 +22,7 @@ public class TestSystemIn04 {
 
         long pump = 80L * 60L * 24 * 365 * 80; 
         System.out.println("total pump:" + pump);
+
+        scanner.close();
     }
 }

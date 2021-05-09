@@ -1,0 +1,140 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Section8_828",
+            "request": "launch",
+            "mainClass": "homework.Section8_828",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Section8_827",
+            "request": "launch",
+            "mainClass": "homework.Section8_827",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Section8_85",
+            "request": "launch",
+            "mainClass": "homework.Section8_85",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Section5_524",
+            "request": "launch",
+            "mainClass": "homework.Section5_524",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch BooleanTest",
+            "request": "launch",
+            "mainClass": "BooleanTest",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestFor07",
+            "request": "launch",
+            "mainClass": "TestFor07",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestFor08",
+            "request": "launch",
+            "mainClass": "TestFor08",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestIf",
+            "request": "launch",
+            "mainClass": "TestIf",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestStatic",
+            "request": "launch",
+            "mainClass": "TestStatic",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestSwitch",
+            "request": "launch",
+            "mainClass": "TestSwitch",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestSystemIn04",
+            "request": "launch",
+            "mainClass": "TestSystemIn04",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestThis",
+            "request": "launch",
+            "mainClass": "TestThis",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestWhile",
+            "request": "launch",
+            "mainClass": "TestWhile",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TypeConvert03",
+            "request": "launch",
+            "mainClass": "TypeConvert03",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Wellcome",
+            "request": "launch",
+            "mainClass": "Wellcome",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Section5_518",
+            "request": "launch",
+            "mainClass": "homework.Section5_518",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Section5_54",
+            "request": "launch",
+            "mainClass": "homework.Section5_54",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Section5_57",
+            "request": "launch",
+            "mainClass": "homework.Section5_57",
+            "projectName": "JAVALearn_1cc39848"
+        }
+    ]
+}
