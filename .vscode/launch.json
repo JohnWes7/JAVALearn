@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TestObjectOverride",
+            "request": "launch",
+            "mainClass": "TestClass.TestObjectOverride",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestClass",
+            "request": "launch",
+            "mainClass": "TestClass.TestClass",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestInherit",
+            "request": "launch",
+            "mainClass": "TestClass.TestInherit",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
             "name": "Launch Section8_828",
             "request": "launch",
             "mainClass": "homework.Section8_828",
