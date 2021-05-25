@@ -6,6 +6,97 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Section4_9",
+            "request": "launch",
+            "mainClass": "Algorithm.Homework.Section4_9",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Section4_5",
+            "request": "launch",
+            "mainClass": "Algorithm.Homework.Section4_5",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Board_Cover_Problem",
+            "request": "launch",
+            "mainClass": "Algorithm.Board_Cover_Problem",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sum_of_Largest_SubSegment_Problem",
+            "request": "launch",
+            "mainClass": "Algorithm.Sum_of_Largest_SubSegment_Problem",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuickSort",
+            "request": "launch",
+            "mainClass": "Algorithm.QuickSort",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeSort",
+            "request": "launch",
+            "mainClass": "Algorithm.MergeSort",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TransferPhalanx",
+            "request": "launch",
+            "mainClass": "Algorithm.TransferPhalanx",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringMacthing",
+            "request": "launch",
+            "mainClass": "Algorithm.StringMacthing",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TaskAlloctionProblem",
+            "request": "launch",
+            "mainClass": "Algorithm.TaskAlloctionProblem",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch KnapasackProblem",
+            "request": "launch",
+            "mainClass": "Algorithm.KnapasackProblem",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch OptimizalBubbleSort",
+            "request": "launch",
+            "mainClass": "Algorithm.OptimizalBubbleSort",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Chicken",
+            "request": "launch",
+            "mainClass": "Algorithm.Chicken",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Bootstrap",
+            "request": "launch",
+            "mainClass": "Polymorphism.Bootstrap",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
             "name": "Launch TestObjectOverride",
             "request": "launch",
             "mainClass": "TestClass.TestObjectOverride",
