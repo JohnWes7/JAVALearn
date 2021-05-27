@@ -27,7 +27,6 @@ public class Section4_9 {
         }
         int middle = (left + right) / 2;
         int ans = -1;
-        System.out.println(arr[middle]);
         if (arr[middle] == target) {
             ans = middle;
         } else if (arr[middle] > target) {

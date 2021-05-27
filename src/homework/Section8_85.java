@@ -55,6 +55,8 @@ public class Section8_85 {
 
             System.out.println();
         }
+
+        scanner.close();
     }
 
     public static double[][] addMatrix(double[][] a, double[][] b) {
