@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Longest_increasing_subsequence_problem",
+            "request": "launch",
+            "mainClass": "Algorithm.DynamicPrograming.Longest_increasing_subsequence_problem",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Multi_segment_graph_shortest_path_problem",
+            "request": "launch",
+            "mainClass": "Algorithm.DynamicPrograming.Multi_segment_graph_shortest_path_problem",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Section5_3",
+            "request": "launch",
+            "mainClass": "Algorithm.Homework.Section5_3",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
             "name": "Launch Section4_9",
             "request": "launch",
             "mainClass": "Algorithm.Homework.Section4_9",
