@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Longest_public_subsequence_problem",
+            "request": "launch",
+            "mainClass": "Algorithm.DynamicPrograming.Longest_public_subsequence_problem",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
             "name": "Launch Longest_increasing_subsequence_problem",
             "request": "launch",
             "mainClass": "Algorithm.DynamicPrograming.Longest_increasing_subsequence_problem",

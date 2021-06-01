@@ -24,6 +24,19 @@ public class PackageProblem {
         }
 
         mArr.PrintArray(tabel);
+
+        System.out.print("element: ");
+        int i = weight.length;
+        int j = contain;
+        while (i > 0) {
+            if (tabel[i][j] > tabel[i - 1][j]) {
+                System.out.print(i + " ");
+                j -= weight[i - 1];
+            }
+            i--;
+        }
+        System.out.println();
+
         return tabel[weight.length][contain];
     }
 }
