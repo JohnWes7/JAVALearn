@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Minimal_spanning_tree",
+            "request": "launch",
+            "mainClass": "Algorithm.GreedyMethod.Minimal_spanning_tree",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch Section6_4",
+            "request": "launch",
+            "mainClass": "Algorithm.Homework.Section6_4",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
             "name": "Launch Longest_public_subsequence_problem",
             "request": "launch",
             "mainClass": "Algorithm.DynamicPrograming.Longest_public_subsequence_problem",

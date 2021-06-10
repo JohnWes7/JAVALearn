@@ -15,9 +15,12 @@ public class PackageProblem {
 
         for (int i = 1; i < tabel.length; i++) {
             for (int j = 0; j < tabel[i].length; j++) {
+                //如果装的下第i个 则判断装入后和不装入的比较 比较哪个value更大
                 if (j >= weight[i - 1]) {
                     tabel[i][j] = Math.max(tabel[i - 1][j - weight[i - 1]] + value[i - 1], tabel[i - 1][j]);
-                } else {
+                }
+                //如果整个背包大小装不下 则直接等于这个不装的value值 也就是上一行table[i-1][j]
+                 else {
                     tabel[i][j] = tabel[i - 1][j];
                 }
             }
