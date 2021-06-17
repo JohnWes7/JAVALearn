@@ -1,7 +1,5 @@
 package homework;
 
-import java.util.Set;
-
 public class Section5_524 {
     public static void main(String[] args) {
 

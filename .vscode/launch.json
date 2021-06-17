@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Lesson._35MultidimensionalArrays.Test",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestArrays",
+            "request": "launch",
+            "mainClass": "Lesson._34Array.TestArrays",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestArray",
+            "request": "launch",
+            "mainClass": "Lesson._34Array.TestArray",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestInterface3",
+            "request": "launch",
+            "mainClass": "Lesson._32接口默认方法静态方法.TestInterface3",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestPolym",
+            "request": "launch",
+            "mainClass": "Lesson._29对象的转型隐式转换.TestPolym",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestAbstract",
+            "request": "launch",
+            "mainClass": "Lesson._30抽象方法.TestAbstract",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestPolym",
+            "request": "launch",
+            "mainClass": "TestPolym",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
+            "name": "Launch BatchJob",
+            "request": "launch",
+            "mainClass": "Algorithm.BackTrack.BatchJob",
+            "projectName": "JAVALearn_1cc39848"
+        },
+        {
+            "type": "java",
             "name": "Launch KnapsackProblem",
             "request": "launch",
             "mainClass": "Algorithm.GreedyMethod.KnapsackProblem",
