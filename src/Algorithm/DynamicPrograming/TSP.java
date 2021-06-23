@@ -17,13 +17,14 @@ public class TSP {
         System.out.println(TSPProblem(src));
 
     }
-
+    
+    @SuppressWarnings("unchecked")
     public static int TSPProblem(int[][] src, int destination, int start, ArrayList<Integer> d) {
 
         if (d.size() == 0) {
             return src[start][destination];
         }
-
+        
         ArrayList<Integer> jh = (ArrayList<Integer>) d.clone();
         jh.remove(0);
         int min = TSPProblem(src, destination, d.get(0), jh) + src[start][d.get(0)];

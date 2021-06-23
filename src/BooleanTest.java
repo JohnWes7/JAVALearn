@@ -2,7 +2,7 @@
 
 public class BooleanTest {
 
-
+    @SuppressWarnings("all")
     public static void main(String[] args) {
         System.out.println("===========boolean类型==========");
         boolean judge1 = true;
