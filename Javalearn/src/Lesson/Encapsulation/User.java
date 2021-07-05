@@ -1,4 +1,4 @@
-package Encapsulation;
+package Lesson.Encapsulation;
 
 public class User {
     private int id;

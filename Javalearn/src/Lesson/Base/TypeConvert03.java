@@ -1,3 +1,5 @@
+package Lesson.Base;
+
 public class TypeConvert03 
 {
 

@@ -1,3 +1,5 @@
+package Lesson.Base;
+
 import java.util.Scanner;
 
 /**

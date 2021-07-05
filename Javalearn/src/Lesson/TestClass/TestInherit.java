@@ -1,4 +1,4 @@
-package TestClass;
+package Lesson.TestClass;
 
 import homework.Section5_518;
 

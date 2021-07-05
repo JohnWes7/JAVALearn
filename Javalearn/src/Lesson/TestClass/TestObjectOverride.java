@@ -1,4 +1,4 @@
-package TestClass;
+package Lesson.TestClass;
 
 public class TestObjectOverride {
     public static void main(String[] args) {
