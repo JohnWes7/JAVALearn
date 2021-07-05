@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class TestsFileReaderWriter {
-    private static final String test59_PATH = "resource/59/test59.txt";
-    private static final String test59_1_PATH = "resource/59/test59(1).txt";
-    private static final String class_data_PATH = "resource/59/class_data.txt";
-    private static final String test_RAF = "resource/59/raf.txt";
+    private static final String test59_PATH = "dataAssets/59/test59.txt";
+    private static final String test59_1_PATH = "dataAssets/59/test59(1).txt";
+    private static final String class_data_PATH = "dataAssets/59/class_data.txt";
+    private static final String test_RAF = "dataAssets/59/raf.txt";
 
     public static void main(String[] args) {
         // test();

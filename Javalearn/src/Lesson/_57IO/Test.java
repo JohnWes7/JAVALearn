@@ -7,8 +7,8 @@ import java.io.IOException;
 
 //不规范 下一个更规范
 public class Test {
-    public static final String PATH57 = "resource/57/test57.txt";
-    public static final String PATH43 = "resource/test43.txt";
+    public static final String PATH57 = "dataAssets/57/test57.txt";
+    public static final String PATH43 = "dataAssets/test43.txt";
 
     public static void main(String[] args) {
         // ReadFile();

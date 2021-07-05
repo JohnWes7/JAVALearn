@@ -29,8 +29,8 @@ import java.io.IOException;
 
 public class Test {
 
-    public static final String PATH57 = "resource/57/test57.txt";
-    public static final String PATH58 = "resource/58/test58.txt";
+    public static final String PATH57 = "dataAssets/57/test57.txt";
+    public static final String PATH58 = "dataAssets/58/test58.txt";
 
     public static void main(String[] args) {
         // TestStream();
