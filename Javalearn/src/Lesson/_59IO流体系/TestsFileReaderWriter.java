@@ -11,7 +11,7 @@ public class TestsFileReaderWriter {
     private static final String test_RAF = "dataAssets/59/raf.txt";
 
     public static void main(String[] args) {
-        // test();
+         test();
         // testBuffered();
         // testBufferedReaderWriter();
 
@@ -25,7 +25,7 @@ public class TestsFileReaderWriter {
         // testObjectIStream();
 
         // testIOStreamRW();
-        testRandomAccessFile();
+        //testRandomAccessFile();
     }
 
     // 关于文件字符流的操作
