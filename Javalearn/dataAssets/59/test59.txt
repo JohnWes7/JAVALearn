@@ -1,0 +1,2 @@
+only in bf johnwest;
+测试utf-8中文
