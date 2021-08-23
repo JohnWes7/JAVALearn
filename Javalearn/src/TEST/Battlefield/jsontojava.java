@@ -11,21 +11,19 @@ public class jsontojava {
     public static String PATH_FALL = "dataAssets/FallEndless/old_fallendless_event.json";
 
     public static void main(String[] args) {
-        //获得JSON
+        
         String json = readtxt(PATH_FALL);
 
-        //将json转为event数组
         Event[] events = null;
         events = JSON.parseObject(json, Event[].class);
-
-        //检测json是否转化正确
+        
         for (int i = 0; i < events.length; i++) {
             if (events[i].Eventtitle != null) {
                 System.out.println(events[i].Eventtitle);
             }
         }
 
-        //检测长度
+        
         if (events[19] == null) {
             System.out.println();
             System.out.println("nul");
