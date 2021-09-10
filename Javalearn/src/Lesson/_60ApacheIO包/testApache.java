@@ -21,11 +21,11 @@ public class testApache {
         // writeFile();
         // testReadFile();
 
-        // readURL();
+        readURL();
 
         // testFileCopy();
 
-        testDirectoryCopy();
+        // testDirectoryCopy();
     }
 
     public static void writeFile() {
@@ -39,7 +39,7 @@ public class testApache {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            System.out.println("complete");
+            System.out.println("\ndone!");
         }
     }
 
