@@ -20,6 +20,7 @@ public class jsontojava {
     public static String PATH_FALL = "dataAssets/FallEndless/old_fallendless_event.json";
     public static String PATH_NEW_FALL = "dataAssets/FallEndless/new_fallendless_event.json";
     public static String PATH_NEW_TEST = "dataAssets/FallEndless/new_fallendless_event_TEST.json";
+    public static String PATH_EVENT_L_SIMP_CHINESE = "dataAssets/FallEndless/FE_day_events_l_simp_chinese_l_english.json";
 
     public static void main(String[] args) {
         // test();
@@ -57,44 +58,98 @@ public class jsontojava {
 
         // 存放事件的字典
         Map<String, newEventInfo> dict = new HashMap<>();
+
+        //存放文字的类
+        Language language = new Language();
+
         // 存放用的数组
         List<newEventInfo> list = new ArrayList<>();
 
         for (int i = 0; i < events.length; i++) {
-            newEventInfo temp = new newEventInfo(events[i].Eventtitle, events[i].Desciption, events[i].Icon,
-                    null, "请写入事件链(没有就删除)");
 
-            List<Option> options = new ArrayList<>();
+            newEventInfo temp = ToNewInfo(events[i]);
 
-            // 要用equals 记得测C#的==和equals
-            if (!events[i].Choice1.equals("")) {
-                options.add(Old2Option(events[i].Choice1, events[i].Choice1Change));
-            }
-            if (!events[i].Choice2.equals("")) {
-                options.add(Old2Option(events[i].Choice2, events[i].Choice2Change));
-            }
-            if (!events[i].Choice3.equals("")) {
-                options.add(Old2Option(events[i].Choice3, events[i].Choice3Change));
-            }
-            System.out.println();
-            temp.options = options;
-
-            //用字典存储
+            // 用字典存储
             // int index = (int)'a' + i;
             // char ch = (char)index;
             // dict.put(ch + events[i].Eventtitle, temp);
 
-            //用数组存储
-            temp.id = events[i].Eventtitle.split("#")[1];
+            // 文字索引为 id.desc  id.a等
+            //加入title
+            String[] title = events[i].Eventtitle.split("#");
+            String key = temp.id + ".title";
+            temp.event_title = key;
+            language.l_simp_chinese.put(key, title[0]);
+            language.l_english.put(key, title[1]);
+
+            //加入desc
+            String[] desc = events[i].Desciption.split("#");
+            key = temp.id + ".desc";
+            temp.description = key;
+            language.l_simp_chinese.put(key, desc[0]);
+            language.l_english.put(key, desc[1]);
+
+            //加入option
+            for (int j = 0; j < temp.options.size(); j++) {
+                char a = (char)((int)'a' + j);
+                key = temp.event_title + "." + a;
+
+                String[] label = temp.options.get(j).label.split("#");
+                temp.options.get(j).label = key;
+                language.l_simp_chinese.put(key, label[0]);
+                language.l_english.put(key, label[1]);
+            }
+
+            // 用list储存
             list.add(temp);
         }
 
+        // 写入事件本体
         flEvent fl = new flEvent();
         fl.DayEvents = list;
         String dictjson = JSON.toJSONString(fl, SerializerFeature.NotWriteDefaultValue);
         System.out.println(dictjson + "\n");
-
         writetxt(PATH_NEW_FALL, dictjson);
+
+        //写入事件文本
+        String lanJSON = JSON.toJSONString(language, SerializerFeature.MapSortField);
+        System.out.println(lanJSON);
+        writetxt(PATH_EVENT_L_SIMP_CHINESE, lanJSON);
+    }
+
+    public static newEventInfo ToNewInfo(oldEvent old) {
+        newEventInfo temp = new newEventInfo(old.Eventtitle, old.Desciption, old.Icon, null, "请写入事件链(没有就删除)");
+
+        List<Option> options = new ArrayList<>();
+
+        // 要用equals 记得测C#的==和equals
+        // 导入所有选项
+        if (!old.Choice1.equals("")) {
+            options.add(Old2Option(old.Choice1, old.Choice1Change));
+        }
+        if (!old.Choice2.equals("")) {
+            options.add(Old2Option(old.Choice2, old.Choice2Change));
+        }
+        if (!old.Choice3.equals("")) {
+            options.add(Old2Option(old.Choice3, old.Choice3Change));
+        }
+        System.out.println();
+        temp.options = options;
+
+        // 用数组存储:
+        // 生成id
+        String id = old.Eventtitle.split("#")[1];
+        String[] word = id.split(" ");
+        id = "";
+        for (int j = 0; j < word.length; j++) {
+            id += word[j];
+            if (j != word.length - 1) {
+                id += "_";
+            }
+        }
+        temp.id = id;
+
+        return temp;
     }
 
     public static Option Old2Option(String title, String change) {
@@ -127,27 +182,36 @@ public class jsontojava {
     }
 
     public static String readtxt(String PATH) {
-        StringBuilder sb = new StringBuilder();
+        // StringBuilder sb = new StringBuilder();
+
+        // try {
+        //     FileReader reader = new FileReader(PATH);
+
+        //     int ch = -1;
+
+        //     while ((ch = reader.read()) != -1) {
+        //         sb.append((char) ch);
+        //     }
+
+        //     System.out.println(sb.toString());
+
+        //     reader.close();
+        // } catch (FileNotFoundException e) {
+        //     e.printStackTrace();
+        // } catch (IOException e) {
+        //     e.printStackTrace();
+        // }
+        String str = null;
 
         try {
-            FileReader reader = new FileReader(PATH);
-
-            int ch = -1;
-
-            while ((ch = reader.read()) != -1) {
-                sb.append((char) ch);
-            }
-
-            System.out.println(sb.toString());
-
-            reader.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            str = FileUtils.readFileToString(new File(PATH), Charset.defaultCharset());
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            System.out.println("read done!");
         }
 
-        return sb.toString();
+        return str;
     }
 
     public static void writetxt(String PATH, String str) {
@@ -161,8 +225,18 @@ public class jsontojava {
     }
 }
 
-class flEvent{
+class flEvent {
     public List<newEventInfo> DayEvents;
+}
+
+class Language {
+    public Map<String, String> l_simp_chinese;
+    public Map<String, String> l_english;
+
+    public Language(){
+        l_simp_chinese = new HashMap<>();
+        l_english = new HashMap<>();
+    }
 }
 
 class oldEvent {
